@@ -5508,6 +5508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e05cb70666cd44db5729e8047dcf70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 1789973388}
+  DeathPanel: {fileID: 1577620113}
+  healthPoints: 5
   _hits: 0
 --- !u!1 &1350867408
 GameObject:
