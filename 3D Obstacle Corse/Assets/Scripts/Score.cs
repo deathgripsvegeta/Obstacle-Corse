@@ -7,20 +7,22 @@ using TMPro;
 public class Score : MonoBehaviour
 {      
     public TextMeshProUGUI health;
-    public GameObject DeathPanel;
     [SerializeField] public float healthPoints = 5;
-    [SerializeField] private int _hits = 0;
 
+    private void Start() 
+    {
+        health.text = healthPoints.ToString();
+    }
     private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.tag != "Hit")
+        if(other.gameObject.tag != "bad")
         {
-            _hits++;
+            --healthPoints;
             
         }
-        if(healthPoints < _hits)
+        if(healthPoints==0)
         {
-            DeathPanel.gameObject.SetActive(true);
+            GameManager.Instance.DeathPanel.gameObject.SetActive(true);
             Time.timeScale = 0;
         }
         

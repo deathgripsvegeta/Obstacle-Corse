@@ -22,4 +22,11 @@ public class PlayerControls : MonoBehaviour
         float zValue=Input.GetAxis("Vertical") * _moveSpeed * Time.deltaTime;
         transform.Translate(xValue, 0f, zValue);
     }
+    /*private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag != "finish")
+        {
+            GameManager.Instance.GameWon();
+        }
+    }*/
 }
