@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
     public GameObject GameWonPanel;
     public GameObject DeathPanel;
     public GameObject Player;
+    public TextMeshProUGUI health;
+
+    [SerializeField] public float healthPoints = 5;
+
     [SerializeField] public bool _isGameActive;
     void Awake() 
     {
@@ -31,13 +35,24 @@ public class GameManager : MonoBehaviour
     {
         
     }
-    public bool GameStart()
+    public void GameStart()
     {
-        return _isGameActive;
+        Time.timeScale = 1;
+        _isGameActive = true;
     }
     public void GameWon()
     {
         Time.timeScale = 0;
         GameWonPanel.SetActive(true);
+    }
+    
+    public void Beginning()
+    {
+        _isGameActive = false;
+        GameStartPanel.gameObject.SetActive(true);
+        if(_isGameActive == false)
+        {
+            GameStartPanel.gameObject.SetActive(false);
+        }
     }
 }

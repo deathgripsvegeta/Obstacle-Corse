@@ -14,7 +14,7 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         Movement();
+        Movement();
     }
     void Movement()
     {
@@ -22,11 +22,5 @@ public class PlayerControls : MonoBehaviour
         float zValue=Input.GetAxis("Vertical") * _moveSpeed * Time.deltaTime;
         transform.Translate(xValue, 0f, zValue);
     }
-    /*private void OnCollisionEnter(Collision other)
-    {
-        if(other.gameObject.tag != "finish")
-        {
-            GameManager.Instance.GameWon();
-        }
-    }*/
+    
 }

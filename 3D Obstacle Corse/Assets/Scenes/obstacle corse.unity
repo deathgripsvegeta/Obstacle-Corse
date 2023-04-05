@@ -2421,6 +2421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spikeRoller
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bfb4f716031c6db4587fbf8cb35e85d6, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfb4f716031c6db4587fbf8cb35e85d6, type: 3}
 --- !u!1 &622741298
@@ -5500,20 +5504,6 @@ CapsuleCollider:
   m_Height: 1.5443766
   m_Direction: 1
   m_Center: {x: 0, y: 0.7721883, z: -0.000000029802322}
---- !u!114 &1332838588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332838579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47e05cb70666cd44db5729e8047dcf70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 1789973388}
-  healthPoints: 5
 --- !u!1 &1350867408
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,8 +5823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e05cb70666cd44db5729e8047dcf70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 1789973388}
-  healthPoints: 5
 --- !u!114 &1405029328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5852,6 +5840,8 @@ MonoBehaviour:
   GameWonPanel: {fileID: 1491002276}
   DeathPanel: {fileID: 1577620113}
   Player: {fileID: 1332838579}
+  health: {fileID: 1789973388}
+  healthPoints: 5
   _isGameActive: 0
 --- !u!4 &1405029329
 Transform:
@@ -9047,6 +9037,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7451b4ae489be024889a299c390c80a2, type: 3}
       propertyPath: m_Name
       value: swiper_teamBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7451b4ae489be024889a299c390c80a2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7451b4ae489be024889a299c390c80a2, type: 3}
