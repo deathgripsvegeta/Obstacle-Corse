@@ -23,4 +23,5 @@ public class PlayerControls : MonoBehaviour
         transform.Translate(xValue, 0f, zValue);
     }
     
+    
 }

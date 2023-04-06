@@ -14,45 +14,54 @@ public class GameManager : MonoBehaviour
     public GameObject DeathPanel;
     public GameObject Player;
     public TextMeshProUGUI health;
+    private Vector3 _startPos;
 
     [SerializeField] public float healthPoints = 5;
 
-    [SerializeField] public bool _isGameActive;
-    void Awake() 
+    [SerializeField] public bool _isGameActive = false;
+    private void Awake()
     {
-        Instance = this;
-        Time.timeScale = 1;
+        Instance = this;    
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Beginning();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        health.text = healthPoints.ToString();
     }
     public void GameStart()
     {
+        _startPos = Player.position;
         Time.timeScale = 1;
         _isGameActive = true;
+        healthPoints = 5;
+        GameStartPanel.gameObject.SetActive(false);
+        DeathPanel.gameObject.SetActive(false);
+        GameWonPanel.SetActive(false);
     }
     public void GameWon()
     {
         Time.timeScale = 0;
         GameWonPanel.SetActive(true);
+        _isGameActive = false;
+    }
+    public void GameLost()
+    {
+        DeathPanel.gameObject.SetActive(true);
+        _isGameActive = false;
+        Debug.Log("dead");
     }
     
     public void Beginning()
     {
-        _isGameActive = false;
+        
         GameStartPanel.gameObject.SetActive(true);
-        if(_isGameActive == false)
-        {
-            GameStartPanel.gameObject.SetActive(false);
-        }
+        
     }
 }

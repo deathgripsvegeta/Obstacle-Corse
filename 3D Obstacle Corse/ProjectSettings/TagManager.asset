@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Hit
   - finish
-  - Obsacle
+  - Obstacle
   layers:
   - Default
   - TransparentFX
