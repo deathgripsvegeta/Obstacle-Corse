@@ -1104,7 +1104,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1405029328}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: GameStart
+        m_MethodName: ReplayButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5876,6 +5876,7 @@ MonoBehaviour:
   GameWonPanel: {fileID: 1491002276}
   DeathPanel: {fileID: 1577620113}
   Player: {fileID: 1332838579}
+  PlayerBear: {fileID: 1332838581}
   health: {fileID: 1789973388}
   healthPoints: 5
   _isGameActive: 0
@@ -6388,6 +6389,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526354897}
   m_CullTransparentMesh: 1
+--- !u!1 &1546859320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eae36f5fe99aa8042bed8e8f85590b13, type: 3}
+  m_PrefabInstance: {fileID: 1200326464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1546859324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546859320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e05cb70666cd44db5729e8047dcf70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &1546859325
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546859320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.062926054
+  m_Height: 1.9995258
+  m_Direction: 1
+  m_Center: {x: 0.009814024, y: 0.9997629, z: -0.000000059604645}
 --- !u!1001 &1573095817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7795,7 +7827,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1405029328}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: GameStart
+        m_MethodName: ReplayButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

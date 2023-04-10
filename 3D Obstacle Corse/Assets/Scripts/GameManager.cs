@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameWonPanel;
     public GameObject DeathPanel;
     public GameObject Player;
+    public Transform PlayerBear;
     public TextMeshProUGUI health;
     private Vector3 _startPos;
 
@@ -37,7 +39,7 @@ public class GameManager : MonoBehaviour
     }
     public void GameStart()
     {
-        _startPos = Player.position;
+        _startPos = PlayerBear.position;
         Time.timeScale = 1;
         _isGameActive = true;
         healthPoints = 5;
@@ -63,5 +65,9 @@ public class GameManager : MonoBehaviour
         
         GameStartPanel.gameObject.SetActive(true);
         
+    }
+    public void ReplayButtonPressed()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
