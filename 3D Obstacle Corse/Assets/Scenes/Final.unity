@@ -6073,7 +6073,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b9f7dcb93a26f6d40a4f1fc0aebeb3cb, type: 3}
   m_PrefabInstance: {fileID: 644699090}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1635137811
+--- !u!64 &1635137808
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6260,6 +6260,8 @@ MonoBehaviour:
   GameWonPanel: {fileID: 2049514912}
   DeathPanel: {fileID: 215564768}
   Player: {fileID: 480569904}
+  blueButton: {fileID: 1635137807}
+  Ramp: {fileID: 2033606317}
   PlayerBear: {fileID: 480569907}
   health: {fileID: 113271851}
   healthPoints: 5
@@ -7329,6 +7331,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 929b8168364e45f429f6661e75b0f759, type: 3}
       propertyPath: m_Name
       value: tileLow_forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 929b8168364e45f429f6661e75b0f759, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929b8168364e45f429f6661e75b0f759, type: 3}

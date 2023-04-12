@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject GameWonPanel;
     public GameObject DeathPanel;
     public GameObject Player;
+    public GameObject blueButton;
+    public GameObject Ramp;
     public Transform PlayerBear;
     public TextMeshProUGUI health;
     private Vector3 _startPos;
@@ -69,5 +71,15 @@ public class GameManager : MonoBehaviour
     public void ReplayButtonPressed()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    private void OnCollisionEnter(Collision other) 
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            if(this.gameObject == blueButton)
+            {
+                Ramp.gameObject.SetActive(true);
+            }
+        }
     }
 }
