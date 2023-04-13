@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 50
+  controlID: 113
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 51
+  controlID: 114
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -337,20 +337,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 765d0000
-      m_LastClickedID: 23926
-      m_ExpandedIDs: 1cfbffff
+      m_SelectedIDs: 945c0000
+      m_LastClickedID: 23700
+      m_ExpandedIDs: 1cfbfffffc5b0000285c0000425c0000545c0000705c0000765d00007a5d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: button_teamBlue
-        m_OriginalName: button_teamBlue
+        m_Name: hoop_teamRed
+        m_OriginalName: hoop_teamRed
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 23848
+        m_UserData: -2932
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -445,13 +445,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\stu401275\Documents\github stuff\Obstacle-Corse\3D
     Obstacle Corse
@@ -459,9 +459,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a85e0000
-    m_LastClickedID: 24232
-    m_ExpandedIDs: 00000000965e0000985e00009a5e0000aa5e000000ca9a3bffffff7f
+    m_SelectedIDs: 965e0000
+    m_LastClickedID: 24214
+    m_ExpandedIDs: 00000000965e0000985e00009a5e0000d05e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -862,9 +862,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 12.272996, y: 1.6881895, z: -6.583543}
+    m_Target: {x: 2.7404594, y: 2.063601, z: 6.705965}
     speed: 2
-    m_Value: {x: 12.272996, y: 1.6881895, z: -6.583543}
+    m_Value: {x: 2.7404594, y: 2.063601, z: 6.705965}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -911,13 +911,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 1, z: 0, w: 0}
+    m_Target: {x: 0.08833281, y: -0.6974113, z: 0.08727913, w: 0.7058308}
     speed: 2
-    m_Value: {x: 0, y: 1, z: 0, w: 0}
+    m_Value: {x: 0.08833281, y: -0.6974113, z: 0.08727913, w: 0.7058308}
   m_Size:
-    m_Target: 1.859462
+    m_Target: 6.283894
     speed: 2
-    m_Value: 1.859462
+    m_Value: 6.5799937
   m_Ortho:
     m_Target: 0
     speed: 2

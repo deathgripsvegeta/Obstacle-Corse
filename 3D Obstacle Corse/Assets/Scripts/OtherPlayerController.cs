@@ -5,7 +5,8 @@ using UnityEngine;
 public class OtherPlayerController : MonoBehaviour
 {
     [SerializeField]private float _moveSpeed = 10f;
-    [SerializeField]private GameObject _playerRB;
+    [SerializeField]private float _rotationSpeed = 10f;
+    [SerializeField]private Rigidbody _playerRB;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +16,11 @@ public class OtherPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        
+        float horizontalInput = Input.GetAxis("Horizontal");
+        Vector3 forwardInput = transform.forward * Input.GetAxis("Vertical");
 
+        _playerRB.AddForce(forwardInput * _moveSpeed, ForceMode.Acceleration);
+        transform.Rotate(Vector3.up, horizontalInput * _rotationSpeed * Time.deltaTime);
     }
     void Movement()
     {
