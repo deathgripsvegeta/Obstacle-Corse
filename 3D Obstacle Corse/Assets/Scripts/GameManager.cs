@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameWonPanel;
     public GameObject DeathPanel;
     public GameObject Player;
+    public GameObject Barrier;
     public Transform PlayerBear;
     public TextMeshProUGUI health;
     private Vector3 _startPos;
@@ -71,5 +72,19 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-   
+
+    private void OnTriggerEnter(Collider other) {
+
+        if(this.gameObject.CompareTag("Barrier"))
+        {
+           if(other.gameObject.CompareTag("Player"))
+           {
+                GameLost();
+           }
+           if(other.gameObject.CompareTag("Ball"))
+           {
+                GameLost();
+           }
+        }
+    }
 }

@@ -8,6 +8,7 @@ TagManager:
   - finish
   - Obstacle
   - Ball
+  - Barrier
   layers:
   - Default
   - TransparentFX
